@@ -1,0 +1,14 @@
+{
+  "name": "orpia-mongodb-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env src/index.js",
+    "dev": "node --env-file=.env --watch src/index.js",
+    "test": "node --test tests/*.test.js",
+    "test:integration": "node --env-file=.env --test tests/mongo.integration.js"
+  },
+  "dependencies": { "express": "^5.1.0", "mongodb": "^7.7.0", "cors": "^2.8.5" },
+  "engines": { "node": ">=22.13.0" }
+}

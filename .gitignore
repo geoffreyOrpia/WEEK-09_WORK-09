@@ -39,3 +39,8 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Backend secrets
+server/.env
+server/.env.*
+!server/.env.example
